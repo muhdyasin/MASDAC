@@ -1,7 +1,3 @@
-Alright. I’m not going to write a fluffy, useless README.
-This will be **clean, professional, and portfolio-grade** — the kind that doesn’t embarrass you when a recruiter opens it.
-
-You can **copy–paste this directly into `README.md`**.
 
 ---
 
