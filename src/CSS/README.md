@@ -1,14 +1,11 @@
 
----
 
-````
 # MAS Design and Code — Official Website
 
 A modern, responsive website built using **Tailwind CSS** to represent **MAS Design and Code (OPC) Pvt. Ltd** — a remote-first, human-tech ecosystem delivering digital products, services, and real-world execution.
 
 This project focuses on **clarity, performance, and scalability**, avoiding unnecessary frameworks while maintaining a strong visual identity.
 
----
 
 ## 🚀 Tech Stack
 
@@ -19,7 +16,6 @@ This project focuses on **clarity, performance, and scalability**, avoiding unne
 
 No heavy frameworks. No bloat. Just clean, maintainable frontend code.
 
----
 
 ## 📁 Project Structure
 
