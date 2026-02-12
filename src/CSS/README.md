@@ -4,7 +4,7 @@
 
 A modern, responsive website built using **Tailwind CSS** to represent **MAS Design and Code (OPC) Pvt. Ltd** — a remote-first, human-tech ecosystem delivering digital products, services, and real-world execution.
 
-This project focuses on **clarity, performance, and scalability**, avoiding unnecessary frameworks while maintaining a strong visual identity.
+This project focuses on **clarity, performance, and scalability**, avoiding unnecessary frameworks while prioritizing performance and maintainability.
 
 
 ## 🚀 Tech Stack
@@ -22,23 +22,28 @@ No heavy frameworks. No bloat. Just clean, maintainable frontend code.
 ```txt
 project-root/
 │
-├── src/
-│   ├── CSS/
-│   │   └── tailwind.css
-│   └── input.css
+├── node_modules/        # ignored by git
 │
-├── img/
-│   ├── background.png
-│   └── *.png
+├── public/
+│   └── img/
+│       ├── background.png
+│       └── *.png
+│
+├── src/
+│   ├── input.css
+│   └── CSS/
+│       └── tailwind.css
 │
 ├── index.html
 ├── contact.html
+├── postcss.config.js
 ├── tailwind.config.js
 ├── package.json
 ├── package-lock.json
 ├── .gitignore
 └── README.md
-````
+
+```
 
 ---
 
@@ -49,7 +54,7 @@ project-root/
 * Sticky navigation with mobile menu
 * Clean sectioned layout for content clarity
 * Optimized image usage
-* Production-ready structure for deployment
+* Deployment-ready static structure
 
 ---
 
@@ -68,7 +73,7 @@ Install dependencies:
 npm install
 ```
 
-Build Tailwind CSS:
+Build Tailwind CSS (Tailwind v4):
 
 ```bash
 npx tailwindcss -i ./src/input.css -o ./src/CSS/tailwind.css --watch
@@ -83,6 +88,8 @@ Open `index.html` in your browser.
 * `node_modules` is intentionally excluded from version control.
 * Tailwind is compiled locally using the CLI.
 * The output CSS file is committed for easy static hosting.
+* No JavaScript framework is used by design to keep the site lightweight and framework-agnostic.
+* Tailwind CSS v4 uses `@import "tailwindcss/preflight"` in `src/input.css`.
 
 ---
 
