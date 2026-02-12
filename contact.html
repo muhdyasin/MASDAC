@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/src/CSS/tailwind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-[#23282c] text-[#e6eaef]">
+    <section id="contact" class="py-16 bg-[#23282c] text-[#e6eaef]">
+        <div class="container mx-auto max-w-7xl px-4">
+            <div class="flex flex-col lg:flex-row gap-12">
+
+                <div class="w-full lg:w-1/2 space-y-6">
+                    <h3 class="text-3xl font-semibold py-2">Let's Connect</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h5 class="text-lg font-medium">Our Location</h5>
+
+                            <div class="flex items-start mt-1 text-zinc-300">
+                                <a href="https://share.google/kvxrZSvJVz9jMf90J" target="_blank"
+                                    aria-label="Open location in Google Maps"
+                                    class="mt-1 mr-2 text-blue-400 hover:text-blue-300 transition">
+                                    <i class="bi bi-geo-alt"></i>
+                                </a>
+
+                                <div>
+                                    <p>Nellikuzhi, Kothamangalam</p>
+                                    <p>Ernakulam, Kerala</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h5 class="text-lg font-medium">Speak with us</h5>
+                            <p class="flex items-center mt-1 text-zinc-300"><i
+                                    class="bi bi-telephone mr-2 text-blue-400"></i>
+                                +91-9037681744</p>
+                        </div>
+                        <div>
+                            <h5 class="text-lg font-medium">Leave a Message / an Email</h5>
+                            <p class="flex items-center mt-1 text-zinc-300"><i
+                                    class="bi bi-whatsapp mr-2 text-green-500"></i>
+                                +91-9037681744</p>
+                            <p class="flex items-center mt-1 text-zinc-300"><i
+                                    class="bi bi-envelope mr-2 text-red-500"></i>
+                                masdacopc@gmail.com</p>
+                        </div>
+                        <div>
+                            <h5 class="text-lg font-medium">Follow us</h5>
+
+                            <div class="flex items-center space-x-4 mt-2 text-xl">
+
+                                <a href="https://www.instagram.com/masdac2k24/" target="_blank" aria-label="Instagram"
+                                    title="Instagram" class="text-pink-500 hover:text-pink-400 transition">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+
+                                <a href="https://www.linkedin.com/company/105334946" target="_blank"
+                                    aria-label="LinkedIn" title="LinkedIn"
+                                    class="text-blue-400 hover:text-blue-300 transition">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+      
+                                <a href="https://www.behance.net/masdac2k24" target="_blank" aria-label="Behance"
+                                    title="Behance" class="text-blue-400 hover:text-blue-300 transition">
+                                    <i class="bi bi-behance"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2">
+                    <h3 class="text-3xl font-semibold py-2">Let's Discuss</h3>
+                    <div class="mb-4">
+                        <h5 class="text-lg font-medium text-zinc-300">Fill the details</h5>
+                    </div>
+                    <form action="https://formspree.io/f/xgoyjkan" method="POST"
+                        class="grid grid-cols-1 md:grid-cols-2 gap-4" id="contact-form">
+                        <div>
+                            <input name="company" type="text"
+                                class="w-full rounded-lg px-4 py-3 bg-white/5 text-white placeholder:text-zinc-400 ring-1 ring-white/10 focus:ring-2 focus:ring-blue-400"
+                                placeholder="Your Company Name" aria-label="First name">
+                        </div>
+                        <div>
+                            <input name="name" type="text"
+                                class="w-full rounded-lg px-4 py-3 bg-white/5 text-white placeholder:text-zinc-400 ring-1 ring-white/10 focus:ring-2 focus:ring-blue-400"
+                                placeholder="Your Name" aria-label="Last name">
+                        </div>
+                        <div>
+                            <input name="email" type="email"
+                                class="w-full rounded-lg px-4 py-3 bg-white/5 text-white placeholder:text-zinc-400 ring-1 ring-white/10 focus:ring-2 focus:ring-blue-400"
+                                id="inputEmail4" placeholder="Email ID">
+                        </div>
+                        <div class="flex gap-2">
+                            <input name="country_code" type="tel" value="+91"
+                                class="w-14 rounded-lg px-3 py-3 bg-white/5 text-white ring-1 ring-white/10 focus:ring-2 focus:ring-blue-400" />
+
+                            <input name="phone" type="tel" placeholder="Phone number"
+                                class="flex-1 rounded-lg px-4 py-3 bg-white/5 text-white placeholder:text-zinc-400 ring-1 ring-white/10 focus:ring-2 focus:ring-blue-400" />
+                        </div>
+                        <div class="col-span-1 md:col-span-2">
+                            <textarea name="message"
+                                class="w-full rounded-lg px-4 py-3 bg-white/5 text-white placeholder:text-zinc-400 ring-1 ring-white/10 focus:ring-2 focus:ring-blue-400"
+                                id="exampleFormControlTextarea1" rows="6"
+                                placeholder="Please let us know your requirement"></textarea>
+                        </div>
+                        <div class="col-span-1 md:col-span-2 mt-2">
+                            <button type="submit"
+                                class="px-8 py-3 bg-[#3f51b5] hover:bg-[#2f3ea0] text-white rounded-full shadow-md hover:shadow-lg transition-colors duration-200">Submit</button>
+                        </div>
+                        <input type="text" name="_gotcha" style="display:none">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

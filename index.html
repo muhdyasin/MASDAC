@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAS Design and Code</title>
+  <link rel="stylesheet" href="/src/CSS/tailwind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-white text-gray-900 text-sm md:text-base lg:text-lg">
+
+  <nav class="sticky top-0 z-50 bg-brand-surfaceDim md:backdrop-blur border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 h-28 flex items-center justify-between">
+
+
+      <a href="/" class="flex items-center">
+        <img src="/img/MASDAC.png" alt="MAS Design and Code logo" class="h-36 md:h-40 w-auto object-contain" />
+      </a>
+
+
+      <div class="hidden md:flex items-center gap-10">
+
+        <ul class="flex items-center gap-10 text-sm font-medium text-gray-600">
+          <li><a href="/" class="whitespace-nowrap hover:text-blue-600 transition">Home</a></li>
+          <li><a href="#" class="whitespace-nowrap hover:text-blue-600 transition">About Us</a></li>
+          <li><a href="#" class="whitespace-nowrap hover:text-blue-600 transition">Products</a></li>
+          <li><a href="#" class="whitespace-nowrap hover:text-blue-600 transition">Services</a></li>
+          <li><a href="/contact.html" class="whitespace-nowrap hover:text-blue-600 transition">Contact Us</a></li>
+        </ul>
+
+        <a href="https://wa.me/919037681744" target="_blank"
+          class="inline-flex items-center justify-center whitespace-nowrap px-6 py-3 text-sm font-semibold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition">
+          Let’s Talk
+        </a>
+
+      </div>
+
+      <button id="menuBtn" onclick="openMenu()" class="md:hidden text-2xl">
+        ☰
+      </button>
+
+    </div>
+  </nav>
+
+  <div id="mobileMenu" class="fixed top-0 left-0 w-full h-screen bg-white text-gray-900
+         -translate-x-full transition-transform duration-300
+         z-50 md:hidden">
+
+    <div class="flex items-center justify-between px-6 h-20 border-b">
+
+      <div class="flex items-center">
+        <img src="/img/MASDAC.png" alt="MAS Design and Code logo" class="h-36 w-auto" />
+      </div>
+
+      <button onclick="closeMenuAndGoHome()" class="text-2xl leading-none p-2" aria-label="Close menu">
+        ✕
+      </button>
+    </div>
+
+    <div class="px-6 pt-8 pl-14">
+
+      <ul class="flex flex-col gap-6 font-semibold text-base md:text-lg">
+        <li><a href="/" onclick="closeMenu()" class="hover:text-blue-600">Home</a></li>
+        <li><a href="#" onclick="closeMenu()" class="hover:text-blue-600">About Us</a></li>
+        <li><a href="#" onclick="closeMenu()" class="hover:text-blue-600">Products</a></li>
+        <li><a href="#" onclick="closeMenu()" class="hover:text-blue-600">Services</a></li>
+        <li><a href="/contact.html" onclick="closeMenu()" class="hover:text-blue-600">Contact Us</a></li>
+      </ul>
+
+      <a href="https://wa.me/919037681744" target="_blank"
+        class="inline-block mt-8 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl">
+        Let’s Talk
+      </a>
+
+    </div>
+  </div>
+
+  <section class="relative bg-cover bg-center bg-no-repeat min-h-screen"
+    style="background-image: url('/img/background.png');">
+
+    <div class="absolute inset-0 bg-black/20"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 py-16 flex items-center">
+      <div class="grid grid-cols-1 xl:grid-cols-2 gap-12 items-center w-full">
+
+        <div class="text-white max-w-xl mx-auto xl:mx-0 text-center xl:text-left">
+
+          <h1 class="font-bold leading-tight text-center
+           text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+            <span class="block">WE will find You</span>
+            <span class="block text-blue-600">OR</span>
+            <span class="block">You will find ME</span>
+          </h1>
+
+          <div class="mt-6 text-white/90 text-center space-y-1">
+            <p class="text-sm md:text-base lg:text-lg">
+              When Technology Needs You
+            </p>
+
+            <p class="text-sm md:text-base lg:text-lg">
+              OR
+            </p>
+
+            <p class="text-sm md:text-base lg:text-lg">
+              You Need Technology
+            </p>
+          </div>
+
+          <div class="mt-8 flex justify-center">
+            <a href="https://wa.me/919037681744" target="_blank"
+              class="inline-flex px-8 py-4 font-semibold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition">
+              Let’s Chat
+            </a>
+          </div>
+
+        </div>
+
+        <div class="flex justify-center xl:justify-end">
+          <img src="/img/backgroundimg.png" class="w-full max-w-lg xl:max-w-xl object-contain" alt="" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-brand-surfaceBright px-6 pt-0 pb-20 md:pb-24">
+    <div class="max-w-7xl mx-auto">
+
+      <h2 class="text-xl md:text-2xl lg:text-4xl font-semibold text-center mb-12 mt-12">
+        Redefining the 9-to-5 Loop
+      </h2>
+
+      <div class="relative bg-brand-surfaceContainerLowest rounded-3xl shadow-[0_40px_120px_rgba(0,0,0,0.08)]">
+
+        <div class="px-12 py-16">
+          <div class="grid md:grid-cols-2 gap-12 items-start">
+            <div class="space-y-6">
+              <h3 class="text-base md:text-lg lg:text-xl font-semibold">
+                Empowering Human Potential Through Tech-Driven, Customer-Based Projects and Services
+              </h3>
+              <p class="text-sm md:text-base lg:text-lg text-gray-600">
+                MAS Design and Code is a 100% remote IT firm dedicated to aligning human potential with the pace of
+                digital evolution through real-world execution.
+              </p>
+              <p class="text-sm md:text-base lg:text-lg text-gray-600">
+                We move beyond traditional models by connecting skilled individuals to roles, locations, and work
+                modes
+                that actually fit — helping people escape the endless 9-to-5 cycle.
+              </p>
+            </div>
+
+            <div class="relative">
+              <div class="absolute -inset-4 bg-blue-600/20 blur-3xl rounded-3xl"></div>
+              <img src="/img/Redefining9to5.png" class="relative rounded-2xl shadow-2xl w-full max-w-lg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="h-px bg-gray-200/60 mx-12"></div>
+
+        <div class="px-12 py-16">
+          <div class="grid md:grid-cols-2 gap-12 items-start">
+            <div class="relative">
+              <div class="absolute -inset-4 bg-blue-600/10 blur-2xl rounded-3xl"></div>
+              <img src="/img/2nd.png" class="relative rounded-2xl shadow-2xl w-full max-w-lg" />
+            </div>
+
+            <div class="space-y-6">
+              <h3 class="text-base md:text-lg lg:text-xl font-semibold">
+                Building the Future of Technology and People
+              </h3>
+              <p class="text-sm md:text-base lg:text-lg text-gray-600">
+                In a world shaped by digital acceleration, MAS Design and Code acts as the bridge where Technology
+                meets
+                People and Purpose.
+              </p>
+              <p class="text-sm md:text-base lg:text-lg text-gray-600">
+                We build impactful Web, Mobile, and Digital Marketing solutions while empowering individuals through
+                live client projects, real-time services, and industry-aligned skill growth.
+              </p>
+              <p class="text-sm md:text-base lg:text-lg text-gray-600">
+                Our focus is simple — deliver results, elevate human potential, and help people land the right roles
+                at
+                the right time, completely free.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-px bg-gray-200/60 mx-12"></div>
+
+        <div class="px-12 py-16">
+          <div class="grid md:grid-cols-2 gap-12 items-start">
+            <div class="space-y-6">
+              <h3 class="text-base md:text-lg lg:text-xl font-semibold">
+                Born Digital
+              </h3>
+              <p class="text-sm md:text-base lg:text-lg text-gray-600">
+                From morning scrolls to midnight swipes, digital touchpoints shape modern life.
+              </p>
+              <p class="text-sm md:text-base lg:text-lg text-gray-600">
+                Beyond services, we connect talent to opportunity through free career-matching.
+              </p>
+            </div>
+
+            <div class="relative flex justify-end">
+              <div class="absolute -inset-4 bg-blue-600/10 blur-2xl rounded-3xl"></div>
+              <img src="/img/3rd.png" class="relative rounded-2xl shadow-2xl w-full max-w-lg" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-brand-surfaceDim px-6 pt-0 pb-20 md:pb-24">
+    <div class="max-w-7xl mx-auto">
+
+      <h2 class="text-xl md:text-2xl lg:text-4xl font-semibold text-center mb-12">
+        We Build the Pathway Forward
+      </h2>
+
+      <div class="relative bg-brand-surfaceContainerLow rounded-3xl shadow-[0_40px_120px_rgba(0,0,0,0.08)] px-12 py-16">
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+          <div class="relative">
+            <div class="absolute -inset-4 bg-blue-600/20 blur-3xl rounded-3xl"></div>
+            <img src="/img/4th.png" class="relative rounded-2xl shadow-2xl w-full max-w-lg" />
+          </div>
+
+          <div class="space-y-6">
+            <h3 class="text-base md:text-lg lg:text-xl font-semibold">
+              Where Digital Innovation Meets Human Potential
+            </h3>
+            <p class="text-sm md:text-base lg:text-lg text-gray-600">
+              MAS connects people and progress through meaningful technology and customer-focused digital services.
+            </p>
+            <p class="text-sm md:text-base lg:text-lg text-gray-600">
+              Our mission goes beyond code — we help businesses grow while individuals sharpen skills through
+              execution.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="bg-brand-surfaceBright px-6 pt-0 pb-20 md:pb-24">
+    <div class="max-w-7xl mx-auto">
+
+      <h2 class="text-xl md:text-2xl lg:text-4xl font-semibold text-center mb-12">
+        Learn What Pays? No. Deliver What Matters.
+      </h2>
+
+      <div class="relative bg-brand-surfaceContainer rounded-3xl shadow-[0_30px_80px_rgba(0,0,0,0.06)] px-12 py-16">
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+          <div class="space-y-6">
+            <h3 class="text-base md:text-lg lg:text-xl font-semibold">
+              Execution-First Learning That Creates Real Impact
+            </h3>
+            <p class="text-sm md:text-base lg:text-lg text-gray-600">
+              MAS moves beyond traditional learning. Our focus is real-time execution and measurable value.
+            </p>
+            <p class="text-sm md:text-base lg:text-lg text-gray-600">
+              Every collaboration introduces scalable systems and lasting impact.
+            </p>
+          </div>
+
+          <div class="relative flex justify-end">
+            <div class="absolute -inset-4 bg-blue-600/10 blur-2xl rounded-3xl"></div>
+            <img src="/img/5th.png" class="relative rounded-2xl shadow-2xl w-full max-w-lg" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bg-brand-surfaceDim px-6 pt-0 pb-20 md:pb-24">
+    <div class="max-w-7xl mx-auto">
+
+      <h2 class="text-xl md:text-2xl lg:text-4xl font-semibold text-center mb-12">
+        From Projects to Partnerships
+      </h2>
+
+      <div
+        class="relative bg-brand-surfaceContainerHigh rounded-3xl shadow-[0_40px_120px_rgba(0,0,0,0.08)] px-12 py-16">
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+
+          <div class="relative">
+            <div class="absolute -inset-4 bg-blue-600/20 blur-3xl rounded-3xl"></div>
+            <img src="/img/6th.png" class="relative rounded-2xl shadow-2xl w-full max-w-lg"
+              alt="From Projects to Partnerships" />
+          </div>
+
+          <div class="space-y-6">
+            <h3 class="text-base md:text-lg lg:text-xl font-semibold">
+              Long-Term Collaboration Built on Strategy and Execution
+            </h3>
+
+            <p class="text-sm md:text-base lg:text-lg text-gray-600">
+              At MAS Design and Code, every client engagement is a partnership built on strategy, collaboration, and
+              execution.
+            </p>
+
+            <p class="text-sm md:text-base lg:text-lg text-gray-600">
+              We translate knowledge into action and elevate teams through hands-on, real-world outcomes.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section class="bg-brand-surfaceBright px-6 pt-0 pb-20 md:pb-24">
+    <div class="max-w-7xl mx-auto">
+
+      <h2 class="text-xl md:text-2xl lg:text-4xl font-semibold text-center mb-12">
+        Flexible, Focused, Forward
+      </h2>
+
+      <div
+        class="relative bg-brand-surfaceContainerHighest rounded-3xl shadow-[0_30px_80px_rgba(0,0,0,0.06)] px-12 py-16">
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+
+          <div class="space-y-6">
+            <h3 class="text-base md:text-lg lg:text-xl font-semibold">
+              Remote-First Teams Built for Clarity and Momentum
+            </h3>
+
+            <p class="text-sm md:text-base lg:text-lg text-gray-600">
+              Being remote-first doesn’t mean disconnected. MAS teams work across time zones with clarity,
+              adaptability,
+              and shared momentum.
+            </p>
+
+            <p class="text-sm md:text-base lg:text-lg text-gray-600">
+              Flexibility fuels productivity — and results follow.
+            </p>
+          </div>
+
+          <div class="relative flex justify-end">
+            <div class="absolute -inset-4 bg-blue-600/10 blur-2xl rounded-3xl"></div>
+            <img src="/img/7th.png" class="relative rounded-2xl shadow-2xl w-full max-w-lg"
+              alt="Flexible, Focused, Forward" />
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bg-brand-surfaceDim px-6 pt-0 pb-20 md:pb-24">
+    <div class="max-w-7xl mx-auto">
+
+      <h2 class="text-xl md:text-2xl lg:text-4xl font-semibold text-center mb-12">
+        Join the Ecosystem That Builds the Future
+      </h2>
+
+      <div class="relative bg-brand-surfaceContainerLow rounded-3xl shadow-[0_40px_120px_rgba(0,0,0,0.08)] px-12 py-16">
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+
+          <div class="relative">
+            <div class="absolute -inset-4 bg-blue-600/20 blur-3xl rounded-3xl"></div>
+            <img src="/img/8th.png" class="relative rounded-2xl shadow-2xl w-full max-w-lg"
+              alt="Join the Ecosystem That Builds the Future" />
+          </div>
+
+          <div class="space-y-6">
+            <h3 class="text-base md:text-lg lg:text-xl font-semibold">
+              A Human–Tech Network Connecting Real Talent and Real Work
+            </h3>
+
+            <p class="text-sm md:text-base lg:text-lg text-gray-600">
+              MAS is a human-tech ecosystem connecting real professionals, real problems, and real progress.
+            </p>
+
+            <p class="text-sm md:text-base lg:text-lg text-gray-600">
+              From free job-matching to real-time collaboration, we help people and companies find the right fit.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bg-brand-surfaceBright px-6 pt-0 pb-20 md:pb-24">
+    <div class="max-w-7xl mx-auto">
+
+      <h2 class="text-xl md:text-2xl lg:text-4xl font-semibold text-center mb-12">
+        Value That Speaks Loud
+      </h2>
+      <div class="relative bg-brand-surfaceContainer rounded-3xl shadow-[0_30px_80px_rgba(0,0,0,0.06)] px-12 py-16">
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+
+          <div class="space-y-6">
+            <h3 class="text-base md:text-lg lg:text-xl font-semibold">
+              Built for ROI, Designed for Long-Term Growth
+            </h3>
+
+            <p class="text-sm md:text-base lg:text-lg text-gray-600">
+              MAS delivers lean, scalable solutions designed for measurable ROI and long-term growth.
+            </p>
+
+            <p class="text-sm md:text-base lg:text-lg text-gray-600">
+              For startups, growing teams, or professionals on a comeback trail — we provide direction that works.
+            </p>
+          </div>
+
+          <div class="relative flex justify-end">
+            <div class="absolute -inset-4 bg-blue-600/10 blur-2xl rounded-3xl"></div>
+            <img src="/img/9th.png" class="relative rounded-2xl shadow-2xl w-full max-w-lg"
+              alt="Value That Speaks Loud" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bg-brand-surfaceDim px-6 pt-0 pb-20 md:pb-24">
+    <div class="max-w-7xl mx-auto">
+
+      <h2 class="text-xl md:text-2xl lg:text-4xl font-semibold text-center mb-12">
+        Real People. Real Projects. Real Results.
+      </h2>
+
+      <div
+        class="relative bg-brand-surfaceContainerHigh rounded-3xl shadow-[0_40px_120px_rgba(0,0,0,0.08)] px-12 py-16">
+        <div class="space-y-20">
+
+          <div class="grid md:grid-cols-2 gap-12 items-start">
+            <div class="relative">
+              <div class="absolute -inset-4 bg-blue-600/20 blur-3xl rounded-3xl"></div>
+              <img src="/img/10th.png" class="relative rounded-2xl shadow-2xl w-full max-w-lg"
+                alt="Real People Real Projects Real Results" />
+            </div>
+
+            <div class="space-y-6">
+              <h3 class="text-base md:text-lg lg:text-xl font-semibold">
+                Your Remote Tech Partner for Everything Digital
+              </h3>
+
+              <p class="text-sm md:text-base lg:text-lg text-gray-600">
+                MAS isn’t chasing trends — we’re building what’s next and leaving behind confidence, capability, and
+                community.
+              </p>
+            </div>
+          </div>
+
+          <div class="h-px bg-gray-100"></div>
+
+          <div class="grid md:grid-cols-2 gap-12 items-start">
+            <div class="space-y-6">
+              <h3 class="text-base md:text-lg lg:text-xl font-semibold text-gray-900">
+                The Future of MAS
+              </h3>
+
+              <p class="text-sm md:text-base lg:text-lg text-gray-600">
+                MAS Design and Code delivers meaningful digital products and services across Web, Mobile, and Digital
+                Marketing.
+              </p>
+            </div>
+
+            <div class="relative flex justify-end">
+              <div class="absolute -inset-4 bg-blue-600/10 blur-2xl rounded-3xl"></div>
+              <img src="/img/11th.png" class="relative rounded-2xl shadow-2xl w-full max-w-lg"
+                alt="The Future of MAS" />
+            </div>
+          </div>
+
+          <div class="h-px bg-gray-100"></div>
+          <div class="grid md:grid-cols-2 gap-12 items-start">
+            <div class="relative">
+              <div class="absolute -inset-4 bg-blue-600/20 blur-3xl rounded-3xl"></div>
+              <img src="/img/12th.png" class="relative rounded-2xl shadow-2xl w-full max-w-lg"
+                alt="A Human-Tech Ecosystem" />
+            </div>
+
+            <div class="space-y-6">
+              <h3 class="text-base md:text-lg lg:text-xl font-semibold text-gray-900">
+                A Human-Tech Ecosystem
+              </h3>
+
+              <p class="text-sm md:text-base lg:text-lg text-gray-600">
+                MAS supports second chances and career pivots through free job-connection initiatives.
+              </p>
+
+              <p class="text-sm md:text-base lg:text-lg text-gray-600">
+                We work closely with individuals and companies to make the right match at the right time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="pt-10 pb-0 bg-[#f6f8fb] text-zinc-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-wrap gap-y-6 justify-center md:justify-between">
+
+        <div class="w-full sm:w-1/2 md:w-1/4">
+          <h5 class="font-bold mb-3">Quick Links</h5>
+
+          <ul class="space-y-2 text-sm font-medium">
+            <li>
+              <a href="/" class="hover:text-blue-600 transition">Home</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-600 transition">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-600 transition">Products</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-600 transition">Services</a>
+            </li>
+            <li class="mb-6">
+              <a href="/contact.html" class="hover:text-blue-600 transition">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="w-full sm:w-1/2 md:w-1/4">
+          <h5 class="font-bold mb-3">Get in Touch</h5>
+          <p class="flex items-center">
+            <i class="bi bi-telephone"></i>
+            <span class="ml-2">+91-9037681744</span>
+          </p>
+          <p class="flex items-center">
+            <i class="bi bi-envelope"></i>
+            <span class="ml-2">masdacopc@gmail.com</span>
+          </p>
+        </div>
+
+        <div class="w-full sm:w-1/2 md:w-1/4">
+          <h5 class="font-bold mb-3">Our Location</h5>
+
+          <div class="flex items-start mt-1 text-zinc-600">
+            <a href="https://share.google/kvxrZSvJVz9jMf90J" target="_blank" aria-label="Open location in Google Maps"
+              class="mt-1 mr-2 text-blue-400 hover:text-blue-300 transition">
+              <i class="bi bi-geo-alt"></i>
+            </a>
+
+            <div>
+              <p>Nellikuzhi, Kothamangalam</p>
+              <p>Ernakulam, Kerala</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full sm:w-1/2 md:w-1/4">
+          <h5 class="font-bold mb-3">Follow Us</h5>
+          <div class="flex space-x-4 text-lg mb-3">
+            <a href="https://www.instagram.com/masdac2k24/" target="_blank" class="hover:text-pink-500"
+              aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/105334946" target="_blank" class="hover:text-blue-600"
+              aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://www.behance.net/masdac2k24" target="_blank" class="hover:text-blue-600"
+              aria-label="Behance">
+              <i class="bi bi-behance"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-950">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-center">
+      <p class="text-xs md:text-sm lg:text-base text-gray-300 text-center">
+        © 2026 MAS Design and Code (OPC) Pvt. Ltd | All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+
+  <script>
+    const mobileMenu = document.getElementById("mobileMenu");
+    const menuBtn = document.getElementById("menuBtn");
+
+    function openMenu() {
+      mobileMenu.classList.remove("-translate-x-full");
+      menuBtn.classList.add("hidden");
+    }
+
+    function closeMenu() {
+      mobileMenu.classList.add("-translate-x-full");
+      menuBtn.classList.remove("hidden");
+    }
+
+    function closeMenuAndGoHome() {
+      closeMenu();
+      window.location.href = "/";
+    }
+  </script>
+
+</body>
+
+</html>
