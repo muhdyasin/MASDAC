@@ -1,9 +1,13 @@
 export default {
-  content: ["./index.html"], 
+  content: [
+    "./index.html",
+    "./src/**/*.{html,js}"
+  ],
+  
   theme: {
     extend: {
-      colors:{
-        brand:{
+      colors: {
+        brand: {
           surfaceDim: "#D8DAE0",
           surfaceBright: "#F8F9FF",
           surface: "#F8F9FF",
@@ -14,7 +18,7 @@ export default {
           surfaceContainerHighest: "#E1E2E8"
         }
       }
-    },              
+    },
   },
-  plugins: [],               
+  plugins: [],
 }
