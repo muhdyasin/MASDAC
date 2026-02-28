@@ -10,6 +10,122 @@
 </head>
 
 <body class="bg-[#23282c] text-[#e6eaef]">
+    <nav class="sticky top-0 z-50 bg-[#23282c] md:backdrop-blur border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-28 flex items-center justify-between">
+
+            <a href="index.html" class="flex items-center">
+                <img src="/img/MASDAC.png" alt="MAS Design and Code logo" class="h-36 md:h-40 w-auto object-contain" />
+            </a>
+
+            <div class="hidden md:flex items-center gap-10">
+
+                <ul class="flex items-center gap-10 text-sm font-medium text-gray-600">
+                    <li>
+                        <a href="index.html" class="whitespace-nowrap hover:text-blue-600 transition">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="whitespace-nowrap hover:text-blue-600 transition">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="whitespace-nowrap hover:text-blue-600 transition">
+                            Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="whitespace-nowrap hover:text-blue-600 transition">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="whitespace-nowrap text-blue-600 font-semibold">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+
+                <a href="https://wa.me/919037681744" target="_blank"
+                    class="inline-flex items-center justify-center whitespace-nowrap px-6 py-3 text-sm font-semibold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition">
+                    Let’s Talk
+                </a>
+
+            </div>
+
+            <button id="menuBtn" onclick="openMenu()" class="md:hidden text-2xl">
+                ☰
+            </button>
+
+        </div>
+    </nav>
+
+    <div id="mobileMenu" class="fixed top-0 left-0 w-full h-screen bg-white text-gray-900
+            -translate-x-full transition-transform duration-300
+            z-50 md:hidden">
+
+        <div class="flex items-center justify-between px-6 h-20 border-b">
+
+            <div class="flex items-center">
+                <a href="index.html">
+                    <img src="/img/MASDAC.png" alt="MAS Design and Code logo" class="h-36 w-auto" />
+                </a>
+            </div>
+
+            <button onclick="closeMenu()" class="text-2xl leading-none p-2" aria-label="Close menu">
+                ✕
+            </button>
+        </div>
+
+        <div class="px-6 pt-8 pl-14">
+
+            <ul class="flex flex-col gap-6 font-semibold text-base">
+
+                <li>
+                    <a href="index.html" onclick="closeMenu()" class="hover:text-blue-600">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" onclick="closeMenu()" class="hover:text-blue-600">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" onclick="closeMenu()" class="hover:text-blue-600">
+                        Products
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" onclick="closeMenu()" class="hover:text-blue-600">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html" onclick="closeMenu()" class="text-blue-600 font-semibold">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+
+            <a href="https://wa.me/919037681744" target="_blank"
+                class="inline-block mt-8 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl">
+                Let’s Talk
+            </a>
+
+        </div>
+    </div>
+
     <section id="contact" class="py-16 bg-[#23282c] text-[#e6eaef]">
         <div class="container mx-auto max-w-7xl px-4">
             <div class="flex flex-col lg:flex-row gap-12">
@@ -64,7 +180,7 @@
                                     class="text-blue-400 hover:text-blue-300 transition">
                                     <i class="bi bi-linkedin"></i>
                                 </a>
-      
+
                                 <a href="https://www.behance.net/masdac2k24" target="_blank" aria-label="Behance"
                                     title="Behance" class="text-blue-400 hover:text-blue-300 transition">
                                     <i class="bi bi-behance"></i>
@@ -120,6 +236,22 @@
             </div>
         </div>
     </section>
+
+    <script>
+        const mobileMenu = document.getElementById("mobileMenu");
+        const menuBtn = document.getElementById("menuBtn");
+
+        function openMenu() {
+            mobileMenu.classList.remove("-translate-x-full");
+            menuBtn.classList.add("hidden");
+        }
+
+        function closeMenu() {
+            mobileMenu.classList.add("-translate-x-full");
+            menuBtn.classList.remove("hidden");
+        }
+    </script>
+    
 </body>
 
 </html>
